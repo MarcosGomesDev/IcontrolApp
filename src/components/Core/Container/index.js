@@ -21,7 +21,7 @@ const Container = ({
       {(actionLabelText || actionButtonText) && (
         <View style={styles.actionContainer}>
           {actionLabelText && (
-            <Text style={styles.actionLabel}>{actionLabelText}</Text>
+              <Text style={styles.actionLabel}>{actionLabelText}</Text>
           )}
           {actionButtonText && (
             <TouchableOpacity
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.2)',
-    margin: 5,
+    margin: 10,
     padding: 8,
   },
   title: {
@@ -59,6 +59,9 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 12,
     color: Colors.white,
+  },
+  actionLabelButton: {
+    flex: 1
   },
   actionButton: {
     flexDirection: 'row',

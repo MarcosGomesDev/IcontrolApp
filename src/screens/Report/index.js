@@ -100,7 +100,11 @@ const Report = ({navigation}) => {
 
       <ScrollView>
         <EntrySummary days={relativeDays} />
-        <EntryList days={relativeDays} category={category} />
+        <EntryList days={relativeDays} category={category} onEntryPress={entry =>
+              navigation.navigate('NewEntry', {
+                entry: entry,
+              })
+            } />
       </ScrollView>
 
       <ActionFooter>

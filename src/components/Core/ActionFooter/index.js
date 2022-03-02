@@ -30,7 +30,7 @@ export const ActionSecondaryButton = ({title, onPress}) => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.background,
-    paddingVertical: 10,
+    paddingVertical: 20,
   },
   inner: {
     flexDirection: 'row',
