@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Colors from '../../../styles/Colors';
 
-const NewEntryAddressPicker = ({address, onChange}) => {
+const NewEntryAddressPicker = ({address, onChange, onDelete}) => {
     const getLocation = (latitude, longitude) => {
         Geocoder.init('AIzaSyDteM2z056N7obZvbsYdXHK8N6nnQvfXPI');
     
@@ -57,13 +57,11 @@ const NewEntryAddressPicker = ({address, onChange}) => {
                 'Apagar?', `Você deseja realmente apagar este endereço?\n ${address}`, [
                 {
                     text: 'Não',
-                    onPress: () => console.log('Ok Pressed')
+                    style: 'cancel',
                 },
                 {
                     text: 'Sim',
                     onPress: onChange({latitude: null, longitude: null, address: null})
-                    ,
-                    style: 'cancel',
                 },
             ])
         } else {
