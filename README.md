@@ -63,6 +63,35 @@
 1) Downloading the code in zip
 2) extract the zip
 3) open the paste in your prefer editor code
-4) In terminal of the project execute npm install for install the libraries used in the project
-5) After in terminal execute cd ios for navigate to ios folder, execute pod install to install the dependencies for ios and execute cd .. to back the main folder
-6) Run in a terminal react-native run-android to execute the app in android or run react-native run-ios to execute in a iphone
+4) In terminal of the project execute
+```
+ npm install 
+```
+ for install the libraries used in the project.
+ 
+6) After in terminal execute 
+```
+cd ios 
+```
+for navigate to ios folder, 
+ execute 
+ ```
+ pod install 
+ ```
+ to install the dependencies for ios and execute 
+ ```
+ cd .. 
+ ```
+ to back the main folder
+ 
+8) Run in a terminal 
+```
+  react-native run-android 
+ ```
+to execute the app in android 
+
+or run 
+```
+react-native run-ios 
+```
+to execute in a iphone.
