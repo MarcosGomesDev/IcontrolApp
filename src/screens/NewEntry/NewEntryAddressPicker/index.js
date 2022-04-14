@@ -7,7 +7,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Colors from '../../../styles/Colors';
 
-const NewEntryAddressPicker = ({address, onChange, onDelete}) => {
+const NewEntryAddressPicker = ({address, onChange, onDelAddress}) => {
+
     const getLocation = (latitude, longitude) => {
         Geocoder.init('AIzaSyDteM2z056N7obZvbsYdXHK8N6nnQvfXPI');
     
@@ -61,7 +62,7 @@ const NewEntryAddressPicker = ({address, onChange, onDelete}) => {
                 },
                 {
                     text: 'Sim',
-                    onPress: onChange({latitude: null, longitude: null, address: null})
+                    onPress: onDelAddress
                 },
             ])
         } else {

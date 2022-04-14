@@ -94,12 +94,12 @@ const NewEntry = ({navigation}) => {
           <NewEntryDatePicker value={entryAt} onChange={setEntryAt} />
           <NewEntryCameraPicker photo={photo} onChangePhoto={setPhoto} />
           <NewEntryAddressPicker 
-            address={address} 
-            onChange={({latitude, longitude, address}) => {
+              address={address} 
+              onChange={({latitude, longitude, address}) => {
               setLatitude(latitude);
               setLongitude(longitude);
               setAddress(address);
-            }} 
+            }}
           />
           <NewEntryDeleteAction entry={entry} onOkPress={onDelete} />
         </View>
