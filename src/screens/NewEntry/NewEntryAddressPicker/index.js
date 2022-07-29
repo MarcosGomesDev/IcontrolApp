@@ -10,7 +10,7 @@ import Colors from '../../../styles/Colors';
 const NewEntryAddressPicker = ({address, onChange, onDelAddress}) => {
 
     const getLocation = (latitude, longitude) => {
-        Geocoder.init('AIzaSyDteM2z056N7obZvbsYdXHK8N6nnQvfXPI');
+        Geocoder.init('SUA API KEY');
     
         Geocoder.from({latitude, longitude})
             .then(json => {
